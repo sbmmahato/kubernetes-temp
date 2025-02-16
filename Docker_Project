@@ -4,7 +4,7 @@ docker run -d -p 8081:8081 -e ME_CONFIG_MONGODB_ADMINUSERNAME=admin -e ME_CONFIG
  --name mongo-express mongo-express
  
  step 3: Now Connecting NOdeJs application with DATABASE
-   >>  https://gitlab.com/nanuchi/techworld-js-docker-demo-app/-/blob/master/app/server.js
+   >>  https://gitlab.com/sbmmahato/demo-app/-/blob/master/app/server.js  #add gitlab/github link here
    
 
  
