@@ -1,0 +1,20 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+   name: sbm
+spec:
+   replicas: 2
+   selector:      # tells the controller which pods to watch/belong to
+    matchLabels:
+     app: sbm
+   template:
+      metadata:
+        labels:
+          app: sbm
+      spec:
+       containers:
+        - name: sbm
+          image: sbmmahato/pipeline-demo
+          imagePullPolicy: Always
+          ports:
+          - containerPort: 80
